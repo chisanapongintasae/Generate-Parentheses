@@ -8,7 +8,7 @@
 
 import UIKit
 
-// n = 3 : ((())) , n = 4 : (((())))
+// MARK: n = 3 : ((())) , n = 4 : (((())))
 
 class ParenthesesCase1: UIViewController {
 	
