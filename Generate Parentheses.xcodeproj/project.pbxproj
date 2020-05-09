@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		675F706059B051D0E6FCC585 /* Pods_Generate_Parentheses.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5B35679E7B7550D3394B75 /* Pods_Generate_Parentheses.framework */; };
+		9A903F42864DD05D2C1E07DF /* Pods_Generate_ParenthesesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705C607C25334DCCAC7D02D4 /* Pods_Generate_ParenthesesTests.framework */; };
 		FCD307BC246541D100BA8325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD307BB246541D100BA8325 /* AppDelegate.swift */; };
 		FCD307BE246541D100BA8325 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD307BD246541D100BA8325 /* SceneDelegate.swift */; };
 		FCD307C0246541D100BA8325 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD307BF246541D100BA8325 /* ViewController.swift */; };
@@ -19,7 +21,6 @@
 		FCD307E22465591100BA8325 /* ParenthesesCase3.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD307E12465591100BA8325 /* ParenthesesCase3.swift */; };
 		FCD307E52465899600BA8325 /* ParenthesesCase4.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD307E42465899600BA8325 /* ParenthesesCase4.swift */; };
 		FCD307E72465912400BA8325 /* ParenthesesCase5.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD307E62465912400BA8325 /* ParenthesesCase5.swift */; };
-		FCD307E9246597F500BA8325 /* ParenthesesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD307E8246597F500BA8325 /* ParenthesesManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03B0C54668F8AC83D30BCA12 /* Pods-Generate ParenthesesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Generate ParenthesesTests.release.xcconfig"; path = "Target Support Files/Pods-Generate ParenthesesTests/Pods-Generate ParenthesesTests.release.xcconfig"; sourceTree = "<group>"; };
+		2A62D1E25FA88B09386526B6 /* Pods-Generate Parentheses.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Generate Parentheses.release.xcconfig"; path = "Target Support Files/Pods-Generate Parentheses/Pods-Generate Parentheses.release.xcconfig"; sourceTree = "<group>"; };
+		705C607C25334DCCAC7D02D4 /* Pods_Generate_ParenthesesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Generate_ParenthesesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92CBF6FE8EDFB883079DD7BB /* Pods-Generate Parentheses.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Generate Parentheses.debug.xcconfig"; path = "Target Support Files/Pods-Generate Parentheses/Pods-Generate Parentheses.debug.xcconfig"; sourceTree = "<group>"; };
+		B530D597297974783535B659 /* Pods-Generate ParenthesesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Generate ParenthesesTests.debug.xcconfig"; path = "Target Support Files/Pods-Generate ParenthesesTests/Pods-Generate ParenthesesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BC5B35679E7B7550D3394B75 /* Pods_Generate_Parentheses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Generate_Parentheses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD307B8246541D100BA8325 /* Generate Parentheses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Generate Parentheses.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD307BB246541D100BA8325 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCD307BD246541D100BA8325 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,7 +56,6 @@
 		FCD307E12465591100BA8325 /* ParenthesesCase3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParenthesesCase3.swift; sourceTree = "<group>"; };
 		FCD307E42465899600BA8325 /* ParenthesesCase4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParenthesesCase4.swift; sourceTree = "<group>"; };
 		FCD307E62465912400BA8325 /* ParenthesesCase5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParenthesesCase5.swift; sourceTree = "<group>"; };
-		FCD307E8246597F500BA8325 /* ParenthesesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParenthesesManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				675F706059B051D0E6FCC585 /* Pods_Generate_Parentheses.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,18 +71,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A903F42864DD05D2C1E07DF /* Pods_Generate_ParenthesesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02651BC2DC74AA49843A42BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92CBF6FE8EDFB883079DD7BB /* Pods-Generate Parentheses.debug.xcconfig */,
+				2A62D1E25FA88B09386526B6 /* Pods-Generate Parentheses.release.xcconfig */,
+				B530D597297974783535B659 /* Pods-Generate ParenthesesTests.debug.xcconfig */,
+				03B0C54668F8AC83D30BCA12 /* Pods-Generate ParenthesesTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7A757477DDBA896F54905B06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC5B35679E7B7550D3394B75 /* Pods_Generate_Parentheses.framework */,
+				705C607C25334DCCAC7D02D4 /* Pods_Generate_ParenthesesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FCD307AF246541D100BA8325 = {
 			isa = PBXGroup;
 			children = (
 				FCD307BA246541D100BA8325 /* Generate Parentheses */,
 				FCD307D1246541D900BA8325 /* Generate ParenthesesTests */,
 				FCD307B9246541D100BA8325 /* Products */,
+				02651BC2DC74AA49843A42BB /* Pods */,
+				7A757477DDBA896F54905B06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,7 +130,6 @@
 				FCD307E12465591100BA8325 /* ParenthesesCase3.swift */,
 				FCD307E42465899600BA8325 /* ParenthesesCase4.swift */,
 				FCD307E62465912400BA8325 /* ParenthesesCase5.swift */,
-				FCD307E8246597F500BA8325 /* ParenthesesManager.swift */,
 				FCD307C1246541D100BA8325 /* Main.storyboard */,
 				FCD307C4246541D900BA8325 /* Assets.xcassets */,
 				FCD307C6246541D900BA8325 /* LaunchScreen.storyboard */,
@@ -124,9 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCD307D7246541D900BA8325 /* Build configuration list for PBXNativeTarget "Generate Parentheses" */;
 			buildPhases = (
+				A2B3CFE032EFFF6A5FDEA79D /* [CP] Check Pods Manifest.lock */,
 				FCD307B4246541D100BA8325 /* Sources */,
 				FCD307B5246541D100BA8325 /* Frameworks */,
 				FCD307B6246541D100BA8325 /* Resources */,
+				7D148C2068975F8E732903A0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,6 +173,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCD307DA246541D900BA8325 /* Build configuration list for PBXNativeTarget "Generate ParenthesesTests" */;
 			buildPhases = (
+				FF21945E19A7725A85284A17 /* [CP] Check Pods Manifest.lock */,
 				FCD307CA246541D900BA8325 /* Sources */,
 				FCD307CB246541D900BA8325 /* Frameworks */,
 				FCD307CC246541D900BA8325 /* Resources */,
@@ -213,13 +246,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7D148C2068975F8E732903A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Generate Parentheses/Pods-Generate Parentheses-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Generate Parentheses/Pods-Generate Parentheses-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Generate Parentheses/Pods-Generate Parentheses-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2B3CFE032EFFF6A5FDEA79D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Generate Parentheses-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF21945E19A7725A85284A17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Generate ParenthesesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FCD307B4246541D100BA8325 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FCD307C0246541D100BA8325 /* ViewController.swift in Sources */,
-				FCD307E9246597F500BA8325 /* ParenthesesManager.swift in Sources */,
 				FCD307E02465559A00BA8325 /* ParenthesesCase1.swift in Sources */,
 				FCD307E22465591100BA8325 /* ParenthesesCase3.swift in Sources */,
 				FCD307E52465899600BA8325 /* ParenthesesCase4.swift in Sources */,
@@ -384,6 +480,7 @@
 		};
 		FCD307D8246541D900BA8325 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92CBF6FE8EDFB883079DD7BB /* Pods-Generate Parentheses.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -402,6 +499,7 @@
 		};
 		FCD307D9246541D900BA8325 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A62D1E25FA88B09386526B6 /* Pods-Generate Parentheses.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -420,6 +518,7 @@
 		};
 		FCD307DB246541D900BA8325 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B530D597297974783535B659 /* Pods-Generate ParenthesesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -442,6 +541,7 @@
 		};
 		FCD307DC246541D900BA8325 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03B0C54668F8AC83D30BCA12 /* Pods-Generate ParenthesesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

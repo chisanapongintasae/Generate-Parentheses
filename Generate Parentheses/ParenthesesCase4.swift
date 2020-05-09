@@ -8,20 +8,15 @@
 
 import UIKit
 
-// n = 3 : ( () ) () , n = 4 : ( () ) ( () )
+// MARK: n = 3 : () ( () ) , n = 4 : ( () ) ( () )
 
-class ParenthesesCase4: UIViewController {
+class ParenthesesCase4 {
 	
-	var evenParenthesesCase4: String = ""
-	var oddParenthesesCase4: String = ""
+	var evenParentheses: String = ""
+	var oddParentheses: String = ""
+	var parentheses: String = ""
 	
-	var parenthesesCase4: String = ""
-	
-	override func viewDidLoad() {
-		super.viewDidLoad()
-	}
-	
-	func parentheses4(n: Int) -> String {
+	func generateParentheses(n: Int) -> String {
 		if n % 2 == 0 {
 			//even Number
 			let number = n / 2
@@ -31,11 +26,10 @@ class ParenthesesCase4: UIViewController {
 				a.append("(())")
 				i = i + 1
 			}
-			self.evenParenthesesCase4 = a
-			self.parenthesesCase4 = self.evenParenthesesCase4
+			self.evenParentheses = a
+			self.parentheses = self.evenParentheses
 			
 		} else {
-			
 			// Odd number
 			let number = ((n - 1) / 2 )
 			var i: Int = 1
@@ -44,10 +38,12 @@ class ParenthesesCase4: UIViewController {
 				a.append("(())")
 				i = i + 1
 			}
-			self.parenthesesCase4 = a
-			self.parenthesesCase4 = self.parenthesesCase4 + "()"
+			self.parentheses = a
+			self.parentheses = "()" + self.parentheses
 		}
-		print(self.parenthesesCase4)
-		return parenthesesCase4
+		print(self.parentheses)
+		return parentheses
 	}
 }
+
+

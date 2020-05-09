@@ -10,42 +10,39 @@ import UIKit
 
 // MARK: n = 3 : ((())) , n = 4 : (((())))
 
-class ParenthesesCase1: UIViewController {
+class ParenthesesCase1 {
 	
-	var openParenthesesCase1: String = ""
-	var closeParenthesesCase1: String = ""
+	var openParentheses: String = ""
+	var closeParentheses: String = ""
+	var parentheses: String = ""
 	
-	override func viewDidLoad() {
-		super.viewDidLoad()
-	}
-	
-	func openParentheses1(n: Int) {
+	func openParentheses(n: Int) {
 		var i: Int = 1
 		var a: String = ""
 		while i <= n {
 			a.append("(")
 			i = i + 1
 		}
-		self.openParenthesesCase1 = a
+		self.openParentheses = a
 	}
 	
-	func closeParentheses1(n: Int) {
+	func closeParentheses(n: Int) {
 		var i: Int = 1
 		var b: String = ""
 		while i <= n {
 			b.append(")")
 			i = i + 1
 		}
-		self.closeParenthesesCase1 = b
+		self.closeParentheses = b
 	}
 	
-	func generateParenthesesCase1(n: Int) -> String {
-		self.openParentheses1(n: n)
-		self.closeParentheses1(n: n)
-		let openParentheses = self.openParenthesesCase1
-		let closeParentheses = self.closeParenthesesCase1
-		let parentheses = "\(openParentheses)\(closeParentheses)"
-		print(parentheses)
+	func generateParentheses(n: Int) -> String {
+		self.openParentheses(n: n)
+		self.closeParentheses(n: n)
+		let openParentheses = self.openParentheses
+		let closeParentheses = self.closeParentheses
+		self.parentheses = "\(openParentheses)\(closeParentheses)"
+		print(self.parentheses)
 		return parentheses
 	}
 }

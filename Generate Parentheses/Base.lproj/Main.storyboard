@@ -14,88 +14,84 @@
                     <view key="view" contentMode="scaleToFill" id="8LY-mm-4Ti">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For generate all combinations of parentheses." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtL-jm-UTc">
+                                <rect key="frame" x="30" y="132" width="354" height="17.5"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter the amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcy-Uf-g4E">
+                                <rect key="frame" x="30" y="94" width="189" height="19"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7Z-za-IDh">
+                                <rect key="frame" x="20" y="76" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="n = " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPO-4j-zII">
+                                <rect key="frame" x="229" y="83" width="52.5" height="42"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer is.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUd-K4-jnC">
+                                <rect key="frame" x="30" y="191.5" width="90.5" height="20"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <color key="textColor" red="0.99696892500000001" green="0.0093072336169999995" blue="0.12541019919999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[&quot;((()))&quot;, &quot;(()())&quot;, &quot;(())()&quot;, &quot;()(())&quot;, &quot;()()()&quot;]" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rcm-VR-u3p">
+                                <rect key="frame" x="60" y="228" width="294" height="35"/>
+                                <fontDescription key="fontDescription" name="NotoNastaliqUrdu" family="Noto Nastaliq Urdu" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ex.3" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Dl-nC-tiH">
+                                <rect key="frame" x="284" y="83" width="70" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Oeq-Gt-yy9"/>
+                                    <constraint firstAttribute="width" constant="70" id="i8j-HR-yKW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="numberTextField:" destination="dsl-t6-dUh" eventType="editingDidEnd" id="e4G-CQ-LCH"/>
+                                </connections>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Qcy-Uf-g4E" firstAttribute="top" secondItem="Tap-NW-HMW" secondAttribute="top" constant="50" id="0Dg-O1-dPc"/>
+                            <constraint firstItem="wtL-jm-UTc" firstAttribute="top" secondItem="Qcy-Uf-g4E" secondAttribute="bottom" constant="19" id="4Td-Jr-8HT"/>
+                            <constraint firstItem="Rcm-VR-u3p" firstAttribute="leading" secondItem="Tap-NW-HMW" secondAttribute="leading" constant="60" id="7hg-Iz-gbX"/>
+                            <constraint firstItem="dPO-4j-zII" firstAttribute="top" secondItem="Qcy-Uf-g4E" secondAttribute="top" constant="-11" id="8FJ-Lv-PFa"/>
+                            <constraint firstItem="Tap-NW-HMW" firstAttribute="trailing" secondItem="wtL-jm-UTc" secondAttribute="trailing" constant="30" id="FT4-Go-XLh"/>
+                            <constraint firstItem="1Dl-nC-tiH" firstAttribute="top" secondItem="dPO-4j-zII" secondAttribute="top" id="Pmq-cj-KNX"/>
+                            <constraint firstItem="dPO-4j-zII" firstAttribute="leading" secondItem="Qcy-Uf-g4E" secondAttribute="trailing" constant="10" id="QDN-px-wJ9"/>
+                            <constraint firstItem="1Dl-nC-tiH" firstAttribute="leading" secondItem="dPO-4j-zII" secondAttribute="trailing" constant="2.5" id="VOV-kE-Unm"/>
+                            <constraint firstItem="OUd-K4-jnC" firstAttribute="leading" secondItem="wtL-jm-UTc" secondAttribute="leading" id="XWH-zE-XpV"/>
+                            <constraint firstItem="Tap-NW-HMW" firstAttribute="trailing" secondItem="Rcm-VR-u3p" secondAttribute="trailing" constant="60" id="eaW-og-HPB"/>
+                            <constraint firstItem="OUd-K4-jnC" firstAttribute="top" secondItem="wtL-jm-UTc" secondAttribute="bottom" constant="42" id="jhp-SQ-2dV"/>
+                            <constraint firstItem="Rcm-VR-u3p" firstAttribute="top" secondItem="OUd-K4-jnC" secondAttribute="bottom" constant="16.5" id="mfr-4V-M8o"/>
+                            <constraint firstItem="wtL-jm-UTc" firstAttribute="leading" secondItem="Tap-NW-HMW" secondAttribute="leading" constant="30" id="s8M-VQ-gyx"/>
+                            <constraint firstItem="Qcy-Uf-g4E" firstAttribute="leading" secondItem="Tap-NW-HMW" secondAttribute="leading" constant="30" id="tGJ-eP-yDD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Tap-NW-HMW"/>
                     </view>
+                    <connections>
+                        <outlet property="numberTextField" destination="1Dl-nC-tiH" id="NcR-0b-m86"/>
+                        <outlet property="resultLabel" destination="Rcm-VR-u3p" id="OJu-aJ-cnT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WQR-ns-Ldb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-999" y="90"/>
-        </scene>
-        <!--Parentheses Case1-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ParenthesesCase1" customModule="Generate_Parentheses" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-226" y="90"/>
-        </scene>
-        <!--Parentheses Case2-->
-        <scene sceneID="qbc-iM-UXk">
-            <objects>
-                <viewController id="AXj-88-nR8" customClass="ParenthesesCase2" customModule="Generate_Parentheses" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="I7S-mj-Aap">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="AQG-2m-o3D"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5ko-6d-jru" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="542" y="90"/>
-        </scene>
-        <!--Parentheses Case3-->
-        <scene sceneID="S5E-t7-Gzo">
-            <objects>
-                <viewController id="Ix6-uI-4Xe" customClass="ParenthesesCase3" customModule="Generate_Parentheses" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8Z5-dU-xG6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="s8h-ef-hl2"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QJT-9o-Ey9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1336" y="90"/>
-        </scene>
-        <!--Parentheses Case4-->
-        <scene sceneID="w95-5B-66c">
-            <objects>
-                <viewController id="6VG-va-hFn" customClass="ParenthesesCase4" customModule="Generate_Parentheses" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wVh-vJ-axf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="QQV-PN-uCs"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gn7-50-RQc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2083" y="91"/>
-        </scene>
-        <!--Parentheses Case5-->
-        <scene sceneID="ZXD-V8-inX">
-            <objects>
-                <viewController id="ULT-Cl-nYw" customClass="ParenthesesCase5" customModule="Generate_Parentheses" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dpX-kr-Qor">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="XN5-cI-0cA"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="z7s-gx-BUO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2821" y="91"/>
+            <point key="canvasLocation" x="-1000.0000000000001" y="89.732142857142847"/>
         </scene>
     </scenes>
 </document>

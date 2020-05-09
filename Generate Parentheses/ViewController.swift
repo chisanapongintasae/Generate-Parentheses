@@ -16,19 +16,30 @@ class ViewController: UIViewController {
 	var case4 = ParenthesesCase4()
 	var case5 = ParenthesesCase5()
 	
+	@IBOutlet var resultLabel: UILabel!
+	@IBOutlet var numberTextField: UITextField!
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		self.showAnswer(n: 1)
 	}
+	
+	@IBAction func numberTextField(_ sender: Any) {
+		let numberTextField = Int(self.numberTextField.text!)
+		guard let number = numberTextField else {
+			return
+		}
+		self.showAnswer(n: number)
+	}
+	
 
 	func showAnswer(n: Int) {
 		
 		var answer: [String] = []
-		let case1:String = self.case1.generateParenthesesCase1(n: n)
-		let case2:String = self.case2.openAndOpenParentheses2(n: n)
-		let case3:String = self.case3.appendAndInsert(n: n)
-		let case4:String = self.case4.parentheses4(n: n)
-		let case5:String = self.case5.parentheses5(n: n)
+		let case1:String = self.case1.generateParentheses(n: n)
+		let case2:String = self.case2.generateParentheses(n: n)
+		let case3:String = self.case3.generateParentheses(n: n)
+		let case4:String = self.case4.generateParentheses(n: n)
+		let case5:String = self.case5.generateParentheses(n: n)
 		
 		answer.append(case1)
 		answer.append(case2)
@@ -37,7 +48,7 @@ class ViewController: UIViewController {
 		answer.append(case5)
 		
 		print(answer)
-
+		self.resultLabel.text = "\(answer)"
 	}
 }
 

@@ -8,25 +8,42 @@
 
 import UIKit
 
-// n = 3 : ()()() , n = 4 : ()()()()
+// MARK: n = 3 : ( ()() ) , n = 4 : ( ()()() )
 
-class ParenthesesCase2: UIViewController {
+class ParenthesesCase2 {
 	
-	var openAndCloseParenthesesCase2: String = ""
-	
-	override func viewDidLoad() {
-		super.viewDidLoad()
+	var openAndCloseParentheses: String = ""
+	var parentheses: String = ""
+		
+	func openAndOpenParentheses(n: Int) {
+		if n == 1 {
+			self.openAndCloseParentheses = ""
+		} else {
+			let number = n-1
+			var i: Int = 1
+			var a: String = ""
+			while i <= number {
+				a.append("()")
+				i = i + 1
+			}
+			self.openAndCloseParentheses = a
+		}
 	}
 	
-	func openAndOpenParentheses2(n: Int) -> String {
-		var i: Int = 1
-		var a: String = ""
-		while i <= n {
-			a.append("()")
-			i = i + 1
+	func generateParentheses(n: Int) -> String {
+		if n == 0 {
+			let result: String = ""
+			self.openAndCloseParentheses = result
+			return openAndCloseParentheses
+		} else {
+			self.openAndOpenParentheses(n: n)
+			self.openAndCloseParentheses.append(")")
+			self.openAndCloseParentheses.insert("(", at: openAndCloseParentheses.startIndex)
+			self.parentheses = self.openAndCloseParentheses
+			print(self.parentheses)
+			return parentheses
 		}
-		self.openAndCloseParenthesesCase2 = a
-		print(openAndCloseParenthesesCase2)
-		return openAndCloseParenthesesCase2
 	}
 }
+
+

@@ -8,43 +8,41 @@
 
 import UIKit
 
-// n = 3 : ( ()() ) , n = 4 : ( ()()() )
+// MARK: n = 3 : ( () ) () , n = 4 : ( () ) ( () )
 
-class ParenthesesCase3: UIViewController {
+class ParenthesesCase3 {
 	
-	var openAndCloseParenthesesCase3: String = ""
+	var evenParentheses: String = ""
+	var oddParentheses: String = ""
+	var parentheses: String = ""
 	
-	override func viewDidLoad() {
-		super.viewDidLoad()
-	}
-	
-	func openAndOpenParentheses3(n: Int) {
-		if n == 1 {
-			self.openAndCloseParenthesesCase3 = ""
-		} else {
-			var number = n-1
+	func generateParentheses(n: Int) -> String {
+		if n % 2 == 0 {
+			//even Number
+			let number = n / 2
 			var i: Int = 1
 			var a: String = ""
 			while i <= number {
-				a.append("()")
+				a.append("(())")
 				i = i + 1
 			}
-			self.openAndCloseParenthesesCase3 = a
-		}
-	}
-	
-	func appendAndInsert(n: Int) -> String {
-		if n == 0 {
-			var result: String = ""
-			self.openAndCloseParenthesesCase3 = result
-			return openAndCloseParenthesesCase3
-		} else {
-			self.openAndOpenParentheses3(n: n)
-			self.openAndCloseParenthesesCase3.append(")")
-			self.openAndCloseParenthesesCase3.insert("(", at: openAndCloseParenthesesCase3.startIndex)
+			self.evenParentheses = a
+			self.parentheses = self.evenParentheses
 			
-			print(self.openAndCloseParenthesesCase3)
-			return openAndCloseParenthesesCase3
+		} else {
+			
+			// Odd number
+			let number = ((n - 1) / 2 )
+			var i: Int = 1
+			var a: String = ""
+			while i <= number {
+				a.append("(())")
+				i = i + 1
+			}
+			self.parentheses = a
+			self.parentheses = self.parentheses + "()"
 		}
+		print(self.parentheses)
+		return parentheses
 	}
 }
